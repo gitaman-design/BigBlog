@@ -1,0 +1,27 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@popperjs/core": "^2.6.0",
+    "autoprefixer": "^10.1.0",
+    "date-fns": "^2.16.1",
+    "graphql": "^15.4.0",
+    "graphql-request": "^3.4.0",
+    "next": "^10.0.0",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.2.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
