@@ -81,10 +81,15 @@ const blog = ({ posts }) => {
     </div>
 
     <div className="bg-gray-50 md:w-3/12 px-4">
-      <h1 className="mt-20 text-2xl pt-10 pb-6">Categories</h1>
+      <h1 className="mt-20 text-2xl pt-10 pb-6">Tags</h1>
       {posts.map((post) => {
         return(
           <>
+          <Link key={post.category.id} as={`/category/${post.category.categoryUrl}`} href="/category/[categoryUrl]">
+            <div className="rounded-full p-2 text-center w-10/12 bg-black text-white my-4">
+              <p className="text-sm">{post.tags}</p>
+            </div>
+          </Link>
           <Link key={post.category.id} as={`/category/${post.category.categoryUrl}`} href="/category/[categoryUrl]">
             <div className="rounded-full p-2 text-center w-10/12 bg-black text-white my-4">
               <p className="text-sm">{post.category.categoryName}</p>
